@@ -7,7 +7,7 @@ Computer Vision library for FTC based on OpenCV, featuring **beacon color and po
 
 ## Installing from Scratch
 
-1. Clone FTCVision into a clean directory (outside your robot controller app) using the following command: `git clone --depth=1 https://github.com/lasarobotics/ftcvision`.
+1. Clone FTCVision into a clean directory (outside your robot controller app) using the following command: `git clone --depth=1 https://github.com/SteelSerpents/FTCVision`.
 2. Open the FTCVision project using Android Studio
 3. Copy your OpModes from your robot controller directory into the appropriate directory within `ftc-robotcontroller`. Then, modify the `FtcOpModeRegister` appropriately to add your custom OpModes.
 4. Before running the app for the first time, install the "OpenCV Manager" from the Google Play Store to enable Vision processing.
@@ -16,7 +16,7 @@ Computer Vision library for FTC based on OpenCV, featuring **beacon color and po
 
 ## Installing into Existing Project
 
-- Clone FTCVision into a clean directory (outside your robot controller app) using the following command: `git clone --depth=1 https://github.com/lasarobotics/ftcvision`.
+- Clone FTCVision into a clean directory (outside your robot controller app) using the following command: `git clone --depth=1 https://github.com/SteelSerpents/FTCVision`.
 - Navigate to the FTCVision directory that you just cloned and copy the `ftc-visionlib` and `opencv-java` folders into your existing robot controller app.
 - Open your robot controller app in Android Studio. Make sure you have the `Project` mode selected in the project browser window (so you can see all of the files in your project).
 - Find your `settings.gradle` file and append the following two lines:
@@ -47,7 +47,7 @@ When installing via Git submodule, **every person cloning your repo will need to
 - Inside the root of your project directory, run
 ```
 git submodule init
-git submodule add https://github.com/lasarobotics/ftcvision ftc-vision
+git submodule add https://github.com/SteelSerpents/FTCVision ftc-vision
 ```
 - Follow the guide "Installing into Existing Project" starting from the third bullet point. Please note that since everything will be in the `ftc-vision` folder and thus directories will need to be modified. Once you get to the step that modifies `settings.gradle`, add the following lines:
 ```
