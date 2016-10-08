@@ -5,8 +5,8 @@
 
 package org.lasarobotics.vision.ftc.resq;
 
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import org.lasarobotics.vision.detection.objects.Contour;
 import org.lasarobotics.vision.detection.objects.Ellipse;
 import org.lasarobotics.vision.util.MathUtil;
@@ -181,7 +181,7 @@ class BeaconScoringCOMPLEX {
             return finalEllipses;
         }
 
-        public int compareTo(@NotNull Scorable another) {
+        public int compareTo(@NonNull Scorable another) {
             //This is an inverted sort - largest first
             return this.score > another.score ? -1 : this.score < another.score ? 1 : 0;
         }
