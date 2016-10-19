@@ -29,7 +29,7 @@ public class CameraTestActivity extends VisionEnabledActivity {
 
         setContentView(R.layout.activity_cameratest);
 
-        opmode = new CameraTestVisionOpMode();
+        opmode = new RedDetector();
         initializeVision(R.id.surfaceView, opmode);
     }
 
